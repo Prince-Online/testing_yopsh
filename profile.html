@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="header">
+  <img src="https://i.ibb.co/vckRpWn/icon.png" class="app-icon">
+</div>
+<hr class="head-hr">
+<div id="content">
+    <div id="loginForm">
+      <h2>Sign In To YOPSH!</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Sign In</button>
+      <h3 class="text-h3">Don't Have Account <a href="signup.html" class="click-here">Click Here</a></h3>
+    </div>
+    <div id="userDetails">
+      <h4>Hey Dear,</h4>
+      <div class="head-userarea">
+      <span id="userName" class="user-name"></span>
+      <img id="userImage" src="" alt="User Image">
+      <span id="userBoss"></span>
+    </div>
+      <hr style="margin: 10px;">
+      <button id="toggleButton"><p>About<span class="material-symbols-outlined">face</span></p>
+        <i class="arrow arrow-right"></i>
+      </button>
+      <div class="user-info" id="myDiv">
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+        <p><strong>Age:</strong> <span id="userAge"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="userMobile"></span></p>
+        <p><strong>Gender:</strong> <span id="userGender"></span></p>
+      </div>
+      <hr style="margin: 10px; margin-bottom: 0px;"> 
+      <div class="nav-footer-btn">
+      <button onclick="window.location.href='show_news.html';"><p style="font-size: 19px;"><span class="material-symbols-outlined" style="background: green;">newspaper</span> News</p> <i class="arrow arrow-right"></i></button> 
+      <hr style="margin: 10px; margin-bottom: 0px;"> 
+      <button onclick="window.location.href='show_news.html';"><p style="font-size: 19px;"><span class="material-symbols-outlined" style="background: blue;">sentiment_satisfied</span> Meme</p> <i class="arrow arrow-right"></i> </button>
+    </div>
+    <hr style="margin: 10px; margin-bottom: 0px;"> 
+    <button id="logoutButton" onclick="logout()"><p style="font-size: 19px;"><span class="material-symbols-outlined" style="background: red;">logout</span> Logout</p></button>
+    </div>
+  </div>
+  <div id="loader">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <div id="customAlert">
+    <h2>Yopsh Says That!</h2>
+    <p id="alertMessage"></p>
+    <button onclick="closeCustomAlert()">OK</button>
+  </div>
+  <script src="profile.js"></script>
+  <style>
+    .app-icon{
+      margin-left: 20px;
+    }
+    #myDiv{
+      display: none;
+      margin-left: 15px;
+    }
+ </style>
